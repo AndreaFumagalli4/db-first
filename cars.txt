@@ -11,7 +11,7 @@ Nome tabella: auto_usate
     chilometraggio              - intero        - SMALLINT          - NOTNULL
     anno_di_produzione          - date          - YEAR              - NOTNULL
     tipo_di_cambio              - stringa       - VARCHAR(10)       - NOTNULL
-    marce                       - intero        - TINYINT           - NULL
+    marce                       - intero        - TINYINT           - NULL DEFAULT(5)
     tipo_di_motore              - stringa       - VARCHAR(9)        - NOTNULL
     cilindi                     - intero        - TINYINT           - NULL                                         
     peso_a_vuoto                - intero        - SMALLINT          - NULL
@@ -19,5 +19,5 @@ Nome tabella: auto_usate
     cavalli                     - numero        - SMALLINT          - NOTNULL
     numero_di_proprietari       - intero        - TINYINT           - NOTNULL
     colore                      - stringa       - VARCHAR(10)       - NULL
-    posti                       - intero        - TINYINT           - NULL    
-    porte                       - intero        - TINYINT           - NULL                        
+    posti                       - intero        - TINYINT           - NULL DEFAULT(4)     
+    porte                       - intero        - TINYINT           - NULL DEFAUL(3)                        
