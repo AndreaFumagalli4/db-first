@@ -1,0 +1,18 @@
+Modellizzare la struttura di una tabella per memorizzare tutti i dati riguardanti delle auto usate messe in vendita da un concessionario
+
+tabella auto usate:
+
+    id
+    numero_di_telaio
+    numero_di_targa
+    prezzo
+    marca
+    modello
+    chilometraggio
+    anno_di_produzione
+    tipo_di_cambio
+    tipo_di_motore
+    consumi
+    cavalli
+    numero_di_proprietari
+    colore
