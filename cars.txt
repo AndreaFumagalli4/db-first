@@ -1,18 +1,23 @@
 Modellizzare la struttura di una tabella per memorizzare tutti i dati riguardanti delle auto usate messe in vendita da un concessionario
 
-tabella auto usate:
+Nome tabella: auto_usate
 
-    id
-    numero_di_telaio
-    numero_di_targa
-    prezzo
-    marca
-    modello
-    chilometraggio
-    anno_di_produzione
-    tipo_di_cambio
-    tipo_di_motore
-    consumi
-    cavalli
-    numero_di_proprietari
-    colore
+    id                          - intero        - MEDIUMINT         - PRIMARY_KEY AUTO_INCREMENT UNIQUE     
+    numero_di_telaio            - stringa       - VARCHAR(17)       - UNIQUE NOTNULL
+    numero_di_targa             - stringa       - VARCHAR(7)        - NOTNULL
+    prezzo                      - float         - FLOAT(8, 2)       - NOTNULL
+    marca                       - stringa       - VARCHAR(13)       - NOTNULL
+    modello                     - stringa       - VARCHAR(10)       - NOTNULL
+    chilometraggio              - intero        - SMALLINT          - NOTNULL
+    anno_di_produzione          - date          - YEAR              - NOTNULL
+    tipo_di_cambio              - stringa       - VARCHAR(10)       - NOTNULL
+    marce                       - intero        - TINYINT           - NULL
+    tipo_di_motore              - stringa       - VARCHAR(9)        - NOTNULL
+    cilindi                     - intero        - TINYINT           - NULL                                         
+    peso_a_vuoto                - intero        - SMALLINT          - NULL
+    consumi (lt/100km)          - float         - FLOAT(3, 1)       - NOTNULL                      
+    cavalli                     - numero        - SMALLINT          - NOTNULL
+    numero_di_proprietari       - intero        - TINYINT           - NOTNULL
+    colore                      - stringa       - VARCHAR(10)       - NULL
+    posti                       - intero        - TINYINT           - NULL    
+    porte                       - intero        - TINYINT           - NULL                        
